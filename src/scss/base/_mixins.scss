@@ -1,6 +1,37 @@
+@use 'variables' as v;
 
 @mixin telefono{
-    @media (min-width: 768px){
+    @media (min-width: v.$telefono){
         @content;
     }
+}
+
+@mixin tablet{
+    @media (min-width: v.$tablet){
+        @content;
+    }
+}
+
+@mixin desk{
+    @media (min-width: v.$desk){
+        @content;
+    }
+}
+
+@mixin deskXL{
+    @media (min-width: v.$deslXL){
+        @content;
+    }
+}
+
+@mixin contenedor{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+@mixin grid($columnas:1, $gap:5rem ){
+    display: grid;
+        grid-template-columns: repeat($columnas, 1fr);
+        gap: $gap;
 }

@@ -1,0 +1,16 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.lineup{
+    background-color: v.$rosa;
+    h3{
+        text-align: center;
+        color: v.$blanco;
+    }
+    .dia{
+        color: v.$blanco;
+        text-align: center;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+}
